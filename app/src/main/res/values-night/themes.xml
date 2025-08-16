@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (NIGHT MODE, tapi disamakan dengan LIGHT). -->
+    <style name="Base.Theme.AppParkMasjid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 1. ATUR STATUS BAR (SAMA SEPERTI LIGHT) -->
+        <!-- Warna background status bar (putih) -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!-- Agar teks & ikon di status bar menjadi hitam (karena background status bar putih) -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <!-- PENGATURAN NAVIGATION BAR -->
+        <!-- Warna background navigation bar (putih) -->
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/white</item>
+
+        <!-- 2. ATUR BACKGROUND UTAMA APLIKASI (SAMA SEPERTI LIGHT) -->
+        <!-- Warna background default untuk window/layar aplikasi (putih) -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Fallback untuk background (putih) -->
+        <item name="android:colorBackground">@color/white</item>
+        <!-- Warna permukaan komponen seperti Card, Dialog juga bisa disamakan (putih) -->
+        <item name="colorSurface">@color/white</item>
+
+        <!-- Warna lain dari tema (SAMA SEPERTI LIGHT) -->
+        <item name="colorPrimary">@color/warnaUtamaAplikasiKu</item>
+        <item name="colorOnPrimary">@color/warnaTeksDiUtamaKu</item>
+        <item name="colorSecondary">@color/warnaAksenKu</item>
+        <item name="colorOnSecondary">@color/warnaTeksDiAksenKu</item>
+
+    </style>
+
+    <!-- Tema utama aplikasi (mewarisi dari Base untuk mode night, tapi base-nya sudah disamakan light) -->
+    <style name="Theme.AppParkMasjid" parent="Base.Theme.AppParkMasjid" />
+</resources>

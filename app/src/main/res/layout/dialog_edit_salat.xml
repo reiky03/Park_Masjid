@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bingkai_card"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TitleSalat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_warna"
+            android:fontFamily="@font/comic_neue_bold"
+            android:drawableStart="@drawable/outline_edit"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Edit Data Jadwal Salat"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!--       Bagian kolom Shubuh    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Shubuh "
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/kolom_shubuh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="datetime"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="23sp"
+                    android:focusable="false"
+                    android:cursorVisible="false" />
+
+            </LinearLayout>
+
+            <!--       Bagian kolom Dzuhur    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Dzuhur "
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/kolom_dzuhur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginStart="13dp"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="datetime"
+                    android:padding="5dp"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="23sp"
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:cursorVisible="false" />
+
+            </LinearLayout>
+
+            <!--       Bagian kolom Ashar    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Ashar "
+                    android:textSize="21sp" />
+
+                <EditText
+                    android:id="@+id/kolom_ashar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="datetime"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="23sp"
+                    android:cursorVisible="false"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <!--       Bagian kolom Maghrib    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Maghrib "
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/kolom_maghrib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginStart="13dp"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="datetime"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="23sp"
+                    android:cursorVisible="false"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <!--       Bagian kolom Isya    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Isya "
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/kolom_isya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_marginStart="13dp"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="datetime"
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="23sp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <!--       Button aksi     -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/hijau"
+                    android:text="Tidak"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/btnIya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/hijau"
+                    android:text="Iya"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

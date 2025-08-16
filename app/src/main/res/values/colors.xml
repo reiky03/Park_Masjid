@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#979696</color>
+    <color name="red">#FF0000</color>
+    <color name="lightGray">#B4B3B3</color>
+
+    <!--  Warna Ikon Splash Screen  -->
+    <color name="hijau">#03A419</color>
+
+    <!--  Warna Utama Aplikasi Light  -->
+    <color name="warnaUtamaAplikasiKu">#808890</color>
+    <color name="warnaStatusbarKu">#CBD4DC</color>
+    <color name="warnaTeksDiUtamaKu">#FFFFFFFF</color>
+    <color name="warnaAksenKu">#FFabcdef</color>
+    <color name="warnaTeksDiAksenKu">#FF000000</color>
+
+    <!--  warna tambahan untuk loading bar  -->
+    <color name="redLight">#F44336</color>        <!-- Merah terang -->
+    <color name="yellow">#FFC107</color>     <!-- Oranye / kuning tua -->
+    <color name="green">#4CAF50</color>
+    <color name="bgNavbar">#EFFBF2</color>      <!-- Hijau -->
+
+</resources>

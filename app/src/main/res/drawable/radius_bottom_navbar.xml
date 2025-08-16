@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Lapisan untuk Background Asli navbar -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Ganti dengan warna background Toolbar yang kamu inginkan -->
+            <!-- atau biarkan transparan jika Toolbar sudah punya warna dari tema -->
+            <solid android:color="@color/white" /> <!-- Contoh: menggunakan warna primer dari tema -->
+            <corners
+                android:topRightRadius="10dp"
+                android:topLeftRadius="10dp"/>
+        </shape>
+    </item>
+
+    <!-- Lapisan untuk Garis Pinggir (Stroke) HANYA di bagian atas -->
+    <item
+        android:bottom="-2dp"
+        android:left="-2dp"
+        android:right="-2dp">
+        <!-- android:top="0dp" tidak perlu di-set negatif karena kita mau stroke atas terlihat -->
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Warna solid tidak penting di sini -->
+            <stroke
+                android:width="1dp"
+                android:color="@color/hijau" />
+            <corners
+                android:topRightRadius="10dp"
+                android:topLeftRadius="10dp"/>
+        </shape>
+    </item>
+
+</layer-list>

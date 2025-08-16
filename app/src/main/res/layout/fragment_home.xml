@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user.HomeFragment">
+
+    <!--  Item Pondasi  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginTop="5dp">
+
+        <!--  item Tulisan welcome  -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeColor="@color/hijau"
+            app:cardBackgroundColor="@color/white"
+            app:strokeWidth="1dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Teks -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/textWelcomePageHome"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/akaya_kanadaka"
+                    android:maxLines="3"
+                    android:ellipsize="end" />
+
+                <!-- Gambar -->
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/img_parkir"
+                    android:contentDescription="Ikon Shalat"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    Text paragraf 2    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textKetersediaanParkir"
+                    android:layout_marginStart="5dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/akaya_kanadaka"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/baseline_location"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/akaya_kanadaka"
+                        android:textSize="16sp"
+                        android:text="@string/textNamaMasjid"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/refreshDataParkir"
+                    android:layout_width="24dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/baseline_refresh"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    Bingkai card parkir motor    -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:strokeColor="@color/hijau"
+            app:strokeWidth="1dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <!--      Ikon dan Teks      -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="start"
+                        android:src="@drawable/motor"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/akaya_kanadaka"
+                        android:gravity="end"
+                        android:text="@string/textParkirMotor"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <!--        bagian kedua teks ketersedian dan notifikasi    -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--        Bagian Ketersediaan        -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/textKetersediaanParkir"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="19sp"
+                            android:fontFamily="@font/comic_neue_bold"/>
+
+                        <!--    teks total parkir untuk motor    -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textTerisiMotor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="23sp"
+                                android:fontFamily="@font/amaranth"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="dari"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/akaya_kanadaka"/>
+
+                            <TextView
+                                android:id="@+id/textTotalMotor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="23sp"
+                                android:fontFamily="@font/amaranth"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--        Garis Pembatas        -->
+                    <!-- Progress Bar Motor -->
+                    <ProgressBar
+                        android:id="@+id/progressBarMotor"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:max="100"
+                        android:progress="0"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:progressDrawable="@drawable/progress_bar_background"
+                        android:layout_marginTop="1dp" />
+
+                    <!--        Bagian notifikasi        -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/baseline_notifications"/>
+
+                        <TextView
+                            android:id="@+id/textNotifikasiMotor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/comic_neue_bold"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    Bingkai card parkir mobil    -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="20dp"
+            app:strokeColor="@color/hijau"
+            app:strokeWidth="1dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <!--      Ikon dan Teks      -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_gravity="start"
+                        android:src="@drawable/mobil"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/akaya_kanadaka"
+                        android:gravity="end"
+                        android:text="@string/textParkirMobil"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <!--        bagian kedua teks ketersedian dan notifikasi    -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--        Bagian Ketersediaan        -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/textKetersediaanParkir"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="19sp"
+                            android:fontFamily="@font/comic_neue_bold"/>
+
+                        <!--    teks total parkir untuk motor    -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textTerisiMobil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="23sp"
+                                android:fontFamily="@font/amaranth"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="dari"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/akaya_kanadaka"/>
+
+                            <TextView
+                                android:id="@+id/textTotalMobil"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="23sp"
+                                android:fontFamily="@font/amaranth"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--        Garis Pembatas        -->
+                    <!-- Progress Bar Motor -->
+                    <ProgressBar
+                        android:id="@+id/progressBarMobil"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:max="100"
+                        android:progress="0"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:progressDrawable="@drawable/progress_bar_background"
+                        android:layout_marginTop="1dp" />
+
+                    <!--        Bagian notifikasi        -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/baseline_notifications"/>
+
+                        <TextView
+                            android:id="@+id/textNotifikasiMobil"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text=""
+                            android:fontFamily="@font/comic_neue_bold"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

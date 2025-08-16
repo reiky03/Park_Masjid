@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (LIGHT MODE). -->
+    <style name="Base.Theme.AppParkMasjid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 1. ATUR STATUS BAR (TERANG) -->
+        <!-- Warna background status bar (putih) -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!-- Agar teks & ikon di status bar menjadi hitam (karena background status bar putih) -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <!-- 2. ATUR BACKGROUND UTAMA APLIKASI (TERANG) -->
+        <!-- Warna background default untuk window/layar aplikasi (putih) -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Fallback untuk background (putih) -->
+        <item name="android:colorBackground">@color/white</item>
+        <!-- Warna permukaan komponen seperti Card, Dialog juga bisa disamakan (putih) -->
+        <item name="colorSurface">@color/white</item>
+
+        <!-- Warna lain dari tema (TERANG) -->
+        <item name="colorPrimary">@color/warnaUtamaAplikasiKu</item>
+        <item name="colorOnPrimary">@color/warnaTeksDiUtamaKu</item>
+        <item name="colorSecondary">@color/warnaAksenKu</item>
+        <item name="colorOnSecondary">@color/warnaTeksDiAksenKu</item>
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <!-- Tema utama aplikasi (mewarisi dari Base untuk mode terang) -->
+    <style name="Theme.AppParkMasjid" parent="Base.Theme.AppParkMasjid" />
+</resources>
+

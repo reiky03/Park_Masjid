@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Park Masjid</string>
+
+    <!--  Text Icon Splash Screen  -->
+    <string name="textSplashScreen">Park Masjid</string>
+    <!--  Text Icon nama masjid -->
+    <string name="textNamaMasjid">Masjid Daarussalam Ganjuran</string>
+
+    <!--  Text yang terdapat pada halaman homepage  -->
+    <!--  Text welcome  -->
+    <string name="textWelcomePageHome">Selamat Datang di Aplikasi Park Masjid</string>
+    <!--  Text Ketersediaan  -->
+    <string name="textKetersediaanParkir">Ketersediaan Tempat Parkir</string>
+    <!--  Text Motor  -->
+    <string name="textParkirMotor">Parkir Motor</string>
+    <!--  Text Mobil  -->
+    <string name="textParkirMobil">Parkir Mobil</string>
+
+    <!--  Text yang terdapat pada halaman homepage  -->
+    <!--  Text Welcome  -->
+    <string name="textWelcomeJadwalHome">Jadwal Waktu Salat</string>
+    <!--  Text Title Salat  -->
+    <string name="textTitleJadwal">Jadwal Salat</string>
+    <!--  Text Shubuh  -->
+    <string name="textShubuh">Shubuh</string>
+    <!--  Text Dzuhur  -->
+    <string name="textDzuhur">Dzuhur</string>
+    <!--  Text Ashar  -->
+    <string name="textAshar">Ashar</string>
+    <!--  Text Maghrib  -->
+    <string name="textMaghrib">Maghrib</string>
+    <!--  Text Isya  -->
+    <string name="textIsya">Isya</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

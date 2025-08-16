@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1062691245629",
+    "project_id": "appparkmasjid",
+    "storage_bucket": "appparkmasjid.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062691245629:android:32f73e0f1fda059c5f2454",
+        "android_client_info": {
+          "package_name": "com.ranp.appparkmasjid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIQPUz9z1mM6HG2nnHubSuOThAi8_UBzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
