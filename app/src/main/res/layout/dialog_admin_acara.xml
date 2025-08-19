@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bingkai_card"
+        android:orientation="vertical">
+
+        <!-- Header / Title custom (warna hijau) -->
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_warna"
+            android:drawableStart="@drawable/outline_edit"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/comic_neue_bold"
+            android:drawableTint="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Tambah Acara"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!--       Bagian kolom Nama acara    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:text="Nama Acara "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/etNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="text"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="19sp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <!--       Bagian kolom Deskripsi acara    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:text="Deskripsi Acara "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/etDeskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="19sp"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <!--       Bagian kolom Tanggal acara    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:text="Tanggal Acara "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/etTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="13dp"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="text"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="19sp"
+                    android:hint="Tanggal"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <!--       Bagian kolom Jam acara    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:text="Jam Acara "
+                    android:layout_marginEnd="34dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/etJam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="13dp"
+                    android:background="@drawable/bingkai_card"
+                    android:inputType="text"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textSize="19sp"
+                    android:hint="Jam (HH:mm)"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <!--       Button aksi     -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBatal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/hijau"
+                    android:text="Tidak"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/btnSimpanUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/hijau"
+                    android:text="Iya"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

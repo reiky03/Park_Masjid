@@ -19,6 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.ranp.appparkmasjid.R
 import com.ranp.appparkmasjid.SplashScreen
+import com.ranp.appparkmasjid.admin.kegiatan.AdminAcaraFragment
 
 class AdminMainActivity : AppCompatActivity() {
 
@@ -62,24 +63,33 @@ class AdminMainActivity : AppCompatActivity() {
         // Inisialisasi BottomNavigationView
         bottomNavigationViewAdmin = findViewById(R.id.bottom_navigation_admin)
 
-        // Menetapkan fragment default saat pertama kali activity dibuka
-        if (savedInstanceState == null) {
-            replaceFragment(AdminHomeFragment())
-        }
-
         // Logika pergantian fragment saat menu di bottom nav dipilih
-        bottomNavigationViewAdmin.setOnItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.home_admin -> {
-                    replaceFragment(AdminHomeFragment()) // Tampilkan halaman home
-                    true
+        // Hapus pemanggilan replaceFragment di awal, ganti dengan selectedItemId
+        if (savedInstanceState == null) {
+            bottomNavigationViewAdmin = findViewById(R.id.bottom_navigation_admin)
+
+            // set listener dulu
+            bottomNavigationViewAdmin.setOnItemSelectedListener { menuItem ->
+                when (menuItem.itemId) {
+                    R.id.home_admin -> {
+                        replaceFragment(AdminHomeFragment())
+                        true
+                    }
+                    R.id.jadwal_admin -> {
+                        replaceFragment(AdminJadwalFragment())
+                        true
+                    }
+                    R.id.acara_admin -> {
+                        replaceFragment(AdminAcaraFragment())
+                        true
+                    }
+                    else -> false
                 }
-                R.id.jadwal_admin -> {
-                    replaceFragment(AdminJadwalFragment()) // Tampilkan halaman jadwal
-                    true
-                }
-                else -> false // Menu tidak dikenali
             }
+            // lalu paksa pilih item HOME (yang di tengah)
+            bottomNavigationViewAdmin.selectedItemId = R.id.home_admin
+            // opsional: kalau user tap item yang sama, jangan reload
+            bottomNavigationViewAdmin.setOnItemReselectedListener { /* no-op */ }
         }
     }
 
